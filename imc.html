@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculadora imc</title>
+        <link rel="stylesheet" href="estilin.css">
+    </head>
+    <body> 
+        <div class="taylor" class="table">
+            <h1> Calculadora de Indice de Massa Corporal </h1> 
+            <div class="textBox">
+                <input type="text" placeholder="digite sua altura" id="altura">
+                <input type="text" placeholder="digite seu peso" id="peso">    
+            </div>
+            <button id="calcular">calcular</button>
+            <h2 id="resultado"> resultado é : </h2>
+            <table>
+                <tr>
+                    <th>Classificação</th>
+                    <th>IMC</th>
+                </tr>
+                <tr>
+                    <td>Abaixo do peso</td>
+                    <td>Menor que 18.5</td>
+                </tr>
+                <tr>
+                    <td>Peso normal</td>
+                    <td>18.5 - 24.9</td>
+                </tr>
+                <tr>
+                    <td>Sobrepeso</td>
+                    <td>25 - 29.9</td>
+                </tr>
+                <tr>
+                    <td>Obesidade grau I</td>
+                    <td>30 - 34.9</td>
+                </tr>
+                <tr>
+                    <td>Obesidade grau II</td>
+                    <td>35 - 39.9</td>
+                </tr>
+                <tr>
+                    <td>Obesidade grau III (mórbida)</td>
+                    <td>Maior que 40</td>
+                </tr>
+            </table>
+             <h3 type="text" id="explicativo">O Índice de Massa Corporal (IMC) é uma medida que relaciona o peso
+                 e a altura de uma pessoa para avaliar se ela está dentro de faixas consideradas saudáveis.É uma
+                 ferramenta simples e amplamente utilizada para identificar se uma pessoa está abaixo do peso, com
+                 peso normal,com sobrepeso ou obesidade.
+             </h3>
+        </div>
+        <script>
+            let inputAltura = document.getElementById("altura")
+            let inputPeso = document.getElementById("peso")
+            let buttonCalcular = document.getElementById("calcular")
+            let mostrarResultado = document.getElementById("resultado")
+             buttonCalcular.addEventListener("click", function(){
+                let peso= Number(inputPeso.value)
+                let altura= Number(inputAltura.value)
+                console.log(peso,altura)
+                console.log(mostrarResultado)
+                let resultado= (peso / (altura * altura)).toFixed(1)
+                mostrarResultado.textContent= (`o resultado é: ${resultado}`)
+                }) 
+         </script>
+    </body>
+ </html>
