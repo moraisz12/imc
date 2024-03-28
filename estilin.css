@@ -1,0 +1,83 @@
+h1{
+    color:rgb(19, 192, 42);
+    text-align: center;
+    margin-top: 20px;
+}
+body{
+    background-color: rgb(18, 18, 20);
+    display:flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+input{
+    padding: 16px;
+    border-radius: 10px;
+    display:flex;
+    width: 100%;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+    margin: auto;
+}
+button{
+    padding: 16px;
+    display:flex;
+    border-radius: 10px;
+    width: 55%;
+    justify-content: center;
+    margin: auto;
+
+}
+h2{
+    color: white;
+    text-align: center; 
+}
+.taylor{
+    background-color:rgb(35, 35, 37) ; 
+    border-radius: 32px;  
+    padding: 16px;
+}
+.center{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 20px
+}
+h3{
+    color: white;
+    width: 69%;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    text-align: center;
+    
+}
+.textBox{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+}
+.textBox input{
+    width: 48%;
+}
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px; 
+    border: 2px solid rgb(245, 245, 245); 
+    text-align: left;
+}
+table td {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+
+}
+th {
+    color: rgb(19, 192, 42); 
+    font-size: 18px;
+    font-weight: bold;
+}
